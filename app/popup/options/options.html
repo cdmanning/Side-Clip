@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <h2 class="title">Settings</h2>
+  <div class="settings-selection">
+    <div class="theme-settings">
+      <h3>Theme</h3>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+      <label><input type="radio" name="theme" value="light"> Light</label>
+    </div>
+    <div class="hotkey-settings">
+      <h3>Hotkey Settings</h3>
+      <button id="extension-shortcuts-button">Manage</button>
+    </div>
+    <div class="clear-storage">
+      <h3>Clear Values</h3>
+      <button id="clear-storage-button">Delete</button>
+    </div>
+  </div>
+  <div class="value-management">
+    <h3>Values (<span id="count">0</span>/10)</h3>
+    <div id="value-list"></div>
+    <div id="add-value-div">
+      <input type="text" id="new-value" placeholder="Enter a value" maxlength="60">
+      <button id="add-button">Add</button>
+    </div>
+    <p id="limit-message" style="display: none;">Maximum of 10 values reached.</p>
+  </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

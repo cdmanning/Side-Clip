@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "Side Clip",
+  "description": "A tool for copy and pasting frequently used values allowing the user to be more productive.",
+  "version": "1.0.1",
+  "author": "Starswept Development",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_popup": "/popup/popup/popup.html",
+    "default_title": "Side Clip"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "scripts/content-script.js"
+      ]
+    }
+  ],
+  "options_page": "/popup/options/options.html",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "commands"
+  ],
+  "commands": {
+    "paste-value-1": {
+      "description": "Paste Value 1"
+    },
+    "paste-value-2": {
+      "description": "Paste Value 2"
+    },
+    "paste-value-3": {
+      "description": "Paste Value 3"
+    },
+    "paste-value-4": {
+      "description": "Paste Value 4"
+    },
+    "paste-value-5": {
+      "description": "Paste Value 5"
+    },
+    "paste-value-6": {
+      "description": "Paste Value 6"
+    },
+    "paste-value-7": {
+      "description": "Paste Value 7"
+    },
+    "paste-value-8": {
+      "description": "Paste Value 8"
+    },
+    "paste-value-9": {
+      "description": "Paste Value 9"
+    },
+    "paste-value-91": {
+      "description": "Paste Value 10"
+    }
+  }
+}

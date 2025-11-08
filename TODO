@@ -1,0 +1,5 @@
+- [ ] Redesign the popup page to be more "round"
+- [ ] Encrypt values before adding local storage
+- [ ] Add alternative color themes (Black, Brown, Green, Purple)
+- [ ] Add ability to copy values to storage via hotkey
+- [X] Authenticate the source paste message in content-script.js

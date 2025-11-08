@@ -1,0 +1,253 @@
+:root {
+  --midnight-navy-background-color: #1a1a2e;
+  --midnight-navy-color: #e8e8e8;
+  --midnight-navy-button-background-color: #0f3460;
+  --midnight-navy-button-color: #ffffff;
+  --midnight-navy-button-hover-background-color: #154587;
+  --midnight-navy-input-background-color: #2e2e4e;
+  --midnight-navy-input-color: #e8e8e8;
+  --midnight-navy-input-border-color: #0f3460;
+  --midnight-navy-item-background-color: #2e2e4e;
+
+}
+
+/* Alternative Themes
+
+  BROWN
+  --brown-background-color: #4A3C2F; 
+  --brown-color: #F5E8C7; 
+  --brown-button-background-color: #7B3F15; 
+  --brown-button-color: #FFFFFF; 
+  --brown-button-hover-background-color: #8A4B2B; 
+  --brown-input-background-color: #6A4E3D; 
+  --brown-input-color: #F5E8C7; 
+  --brown-input-border-color: #9C5B2E; 
+  --brown-item-background-color: #7A5C3D; 
+
+  WHITE
+  --white-background-color: #F5F5F5;
+  --white-color: #333333;
+  --white-button-background-color: #808080;
+  --white-button-color: #FFFFFF;
+  --white-button-hover-background-color: #666666;
+  --white-input-background-color: #E0E0E0;
+  --white-input-color: #333333;
+  --white-input-border-color: #808080;
+  --white-item-background-color: #D3D3D3;
+
+*/
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  min-width: 300px;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: var(--midnight-navy-background-color);
+  color: var(--midnight-navy-color);
+}
+
+body.dark-theme button {
+  background-color: var(--midnight-navy-button-background-color);
+  ;
+  color: var(--midnight-navy-button-color);
+  ;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.dark-theme button:hover {
+  background-color: var(--midnight-navy-button-hover-background-color);
+  ;
+}
+
+body.dark-theme input {
+  background-color: var(--midnight-navy-input-background-color);
+  color: var(--midnight-navy-input-color);
+  border: 1px solid var(--midnight-navy-input-border-color);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+body.dark-theme .item {
+  background-color: var(--midnight-navy-item-background-color);
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.light-theme button {
+  background-color: #ff6c00;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.light-theme button:hover {
+  background-color: #ff851a;
+}
+
+body.light-theme input {
+  background-color: #E0E0E0;
+  color: #333333;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+body.light-theme .item {
+  background-color: #E0E0E0;
+}
+
+body.brown-theme {
+  background-color: var(--brown-background-color);
+  color: var(--brown-color);
+}
+
+body.brown-theme button {
+  background-color: var(--brown-button-background-color);
+  ;
+  color: var(--brown-button-color);
+  ;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.brown-theme button:hover {
+  background-color: var(--brown-button-hover-background-color);
+  ;
+}
+
+body.brown-theme input {
+  background-color: var(--brown-input-background-color);
+  color: var(--brown-input-color);
+  border: 1px solid var(--brown-input-border-color);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+body.brown-theme .item {
+  background-color: var(--brown-item-background-color);
+}
+
+
+body.white-theme {
+  background-color: var(--white-background-color);
+  color: var(--white-color);
+}
+
+body.white-theme button {
+  background-color: var(--white-button-background-color);
+  ;
+  color: var(--white-button-color);
+  ;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.white-theme button:hover {
+  background-color: var(--white-button-hover-background-color);
+  ;
+}
+
+body.white-theme input {
+  background-color: var(--white-input-background-color);
+  color: var(--white-input-color);
+  border: 1px solid var(--white-input-border-color);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+body.white-theme .item {
+  background-color: var(--white-item-background-color);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.plus-button {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.edit-button {
+  display: block;
+  margin-left: auto;
+  margin-top: 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  float: right;
+}
+
+.app-name {
+  size: 64px;
+  display: block;
+  margin-left: auto;
+  margin-top: 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  float: left;
+}
+
+.settings-selection div,
+.value-management,
+.title {
+  margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.settings-selection div label {
+  margin-right: 15px;
+}
+
+#new-value {
+  width: 90%;
+  margin-right: .3%;
+}
+
+#add-button {
+  width: 8%;
+}
+
+.settings-selection div {
+  display: inline-block;
+  margin-right: -5%;
+}
+
+.settings-selection div button {
+  transform: translatex(20%);
+}
